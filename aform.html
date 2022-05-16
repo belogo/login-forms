@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        html, body{ width: 100%; height: 100%; }
+        *{ box-sizing: border-box; margin: 0; padding: 0; border: 0;}
+        .container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .form-container{
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        .left-side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            padding: 2em;
+            font-family: sans-serif;
+            width: 25%;
+            background-color: white;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            line-height: 1.5em;
+            text-align: left;
+            color: #333;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .left-side:hover{
+            color: black;
+        }
+        .right-side{
+            padding: 3em;
+            width: 25%;background: rgb(2,0,36);
+            background: linear-gradient(rgb(25 36 122) 35%, rgba(0,212,255,1) 100%);
+            border-radius: 0 15px 15px 0;
+            box-shadow: 5px 5px 10px gray;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .right-side input, button{
+            display: block;
+            width: 100%;
+            padding: 0.75em;
+            margin: 1em auto;
+            background-color: lightblue;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+        .right-side button[type=submit]{
+            color: #333;
+            background-color: white;
+            margin: 1em auto;
+            box-shadow: 2px 2px black;
+            transition: 0.2s box-shadow;
+            font-size: 1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .right-side button:hover[type=submit]{
+            box-shadow: 6px 6px black;
+            color: black;
+        }
+        input:focus{
+            transform: scaleX(1.2);
+            transition: .4s;
+        }
+        .form-text{
+            border-left: 3px solid black;
+            padding-left: .5em;
+        }
+        .wrapper{
+            width: 100%; height: 100%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+                <div class="left-side">
+                    <p class="form-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="right-side">
+                    <form action="#" method="post" autocomplete="off">
+                        <input type="text" name="user" placeholder="email: ">
+                        <input type="password" name="password" placeholder="password: ">
+                        <button type="submit" name="sumbit">Sign In</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
